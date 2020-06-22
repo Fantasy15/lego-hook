@@ -1,5 +1,5 @@
 {
-    "name": "lego-hook",
+    "name": "lego-hooks",
     "version": "0.1.0",
     "description": "some hooks",
     "main": "./dist/lego-hooks.js",
