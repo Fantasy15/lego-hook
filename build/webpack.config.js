@@ -4,8 +4,6 @@
  */
 
 const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const babelConfig = require('./babel.config');
 const WebpackBar = require('webpackbar');
 
@@ -32,21 +30,15 @@ module.exports = (env) => {
                 {
                     test: /\.css$/,
                     use: [
-                        MiniCssExtractPlugin.loader,
+                        'style-loader',
                         'css-loader',
                     ]
                 },
                 {
                     test: /\.less$/,
                     use: [
-                        MiniCssExtractPlugin.loader,
+                        'style-loader',
                         'css-loader',
-                        {
-                            loader: 'postcss-loader',
-                            options: {
-                                plugins: [require('autoprefixer')]
-                            }
-                        },
                         'less-loader',
                     ]
                 },
