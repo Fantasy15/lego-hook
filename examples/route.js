@@ -2,7 +2,7 @@
  * @file route.js
  */
 
-import Demo from '../packages/useMount/demo';
+import Demo from '../packages/useUpdateLayoutEffect/demo';
 
 export default [
     {
